@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Typography, Button, Grid, Card, CardMedia, CardContent, CardActions } from '@mui/material'
-import { Image } from '@mui/icons-material'
 import { Link } from 'react-scroll'
 
 
@@ -12,17 +11,16 @@ const MainPage = () => {
                 flexDirection:'column'
             }}
         > 
-            <Box className='homepage-container' id='intro' sx={{
+            <Box className='main-page' id='intro' sx={{
                 position:'absolute',
-
-                bgcolor:'primary.dark',
                 marginLeft:'20%',
                 display:'flex',
                 justifyContent:'center',
                 alignItems:'center',
-                flexDirection:'column'
+                flexDirection:'column',
+                paddingTop:25
             }}  >
-                <Box sx={{ marginTop:25, }} />
+                
                 <Typography sx={{ paddingLeft:40, paddingRight:35}} variant='h4'  >
                     Hi! I'm Prologue, a free responsive
                     site template designed by HTML5 UP.
@@ -33,7 +31,7 @@ const MainPage = () => {
                 </Typography>
                 <Box sx={{ marginTop:8, paddingLeft:45, paddingRight:45}} >
                     <Button variant='contained' >
-                        <Link to='portafolio' activeClass={true} spy={true} offset={-70} smooth={true} duration={2000} >Ver Portafolio</Link>
+                        <Link to='portafolio' activeClass={true} spy={true} smooth={true} offset={-50} duration={2000} >Ver Portafolio</Link>
                     </Button>
                 </Box>
                 <Box className='portafolio-container'  sx={{ paddingTop:35, marginLeft:20 }} >
@@ -80,11 +78,11 @@ const MainPage = () => {
                     </Grid>
                 </Box>
                 <Box className='about-container' sx={{ marginLeft:20, paddingBottom:30 }} id='about' >
-                    <Typography variant='h3' sx={{ paddingLeft:45, paddingBottom:10 }}  >About Me</Typography>
-                    <Box component='img' width='1000' height='600'  src='https://via.placeholder.com/800x250' 
-                        sx={{ paddingLeft:8, paddingBottom:10 }} />
-                    <Typography sx={{paddingLeft:10, paddingRight:20 }} >
-                        Labore in non commodo non tempor aliquip esse ipsum occaecat in duis. Aliqua incididunt enim pariatur exercitation sit magna laborum incididunt voluptate voluptate. Nisi sunt incididunt eu veniam fugiat ex.Enim nulla anim excepteur minim.
+                    <Typography variant='h3' sx={{ paddingLeft:45, paddingBottom:8 }}  >About Me</Typography>
+                    <Box component='img' width='250' height='250'  src='https://via.placeholder.com/900x250' 
+                        sx={{ paddingLeft:2, paddingBottom:6 }} />
+                    <Typography sx={{ paddingLeft:2, paddingRight:12, justifyContent:'inherit' }} >
+                        Culpa irure occaecat culpa ad irure id ipsum nulla ea magna velit ex dolor.Enim dolore ea nostrud voluptate tempor excepteur officia ipsum cillum. in non commodo non tempor aliquip esse ipsum occaecat in duis.hoalas  Aliqua incididunt enim pariatur exercitation sit magna laborum incididunt voluptate voluptate. Nisi sunt incididunt eu veniam fugiat ex.Enim nulla anim excepteur minim.
                     </Typography>
                 </Box>
             </Box>
